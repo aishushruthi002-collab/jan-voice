@@ -1,0 +1,130 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #f1f7f3;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 12px 40px rgba(0, 60, 30, 0.1);
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #167447;
+}
+
+.auth-card h2 {
+  margin-bottom: 4px;
+}
+
+.auth-card p {
+  color: #647067;
+  overflow-wrap: anywhere;
+}
+
+.auth-card label {
+  color: #3c5143;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-card input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d4ded7;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.auth-card input:focus {
+  border-color: #5baa75;
+  outline: 3px solid #e4f4e7;
+}
+
+.auth-helper {
+  margin: -4px 0 4px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.auth-card > button[type="submit"] {
+  margin-top: 8px;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #167447;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card .auth-message {
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid #ccebd3;
+  border-radius: 8px;
+  background: #e8f7ec;
+  color: #187642;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.auth-card .auth-message.error {
+  border-color: #f0d2cc;
+  background: #fff5f2;
+  color: #963c31;
+}
+
+.auth-mode-switch {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+.auth-forgot-link {
+  align-self: flex-end;
+  margin-top: -6px;
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.auth-switch {
+  border: 0;
+  background: transparent;
+  color: #167447;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-switch:hover {
+  color: #0c5b30;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .auth-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+}

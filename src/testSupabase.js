@@ -2,6 +2,13 @@
 import { supabase } from "./supabase";
 
 async function testConnection() {
+  const { data: { user }, error: authError } = await supabase.auth.getUser();
+
+  if (authError || !user) {
+    console.error("Sign in before testing access to complaints.");
+    return;
+  }
+
   const { error } = await supabase
     .from("complaints")
     .select("id")

@@ -1,0 +1,73 @@
+.location-map {
+  width: 100%;
+  min-width: 0;
+  height: 360px;
+  overflow: hidden;
+  border: 1px solid #dfe8df;
+  border-radius: 12px;
+  background: #edf3ed;
+}
+
+.location-map-canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.location-map-loading {
+  display: grid;
+  place-items: center;
+  color: #718074;
+  font-size: 12px;
+}
+
+.janvoice-marker-shell {
+  border: 0;
+  background: transparent;
+}
+
+.janvoice-map-marker {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  box-shadow: 0 2px 7px #183d2966;
+  transform: rotate(-45deg);
+}
+
+.janvoice-map-marker-pending {
+  background: #d99525;
+}
+
+.janvoice-map-marker-in-progress {
+  background: #4386c8;
+}
+
+.janvoice-map-marker-resolved {
+  background: #23864c;
+}
+
+.complaint-map-popup {
+  display: grid;
+  gap: 5px;
+  min-width: 140px;
+  color: #536557;
+  font: 12px/1.45 'DM Sans', Arial, sans-serif;
+}
+
+.complaint-map-popup strong {
+  color: #21804a;
+  font-size: 11px;
+}
+
+.complaint-map-popup-status {
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .location-map {
+    height: 300px;
+    border-radius: 9px;
+  }
+}
